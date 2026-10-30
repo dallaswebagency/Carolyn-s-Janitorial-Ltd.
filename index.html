@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercial, Residential &amp; Construction Cleaning Services | Carolyn's Janitorial</title>
+<meta name="description" content="Janitorial cleaning services in Grande Prairie, Edmonton, Lloydminster &amp; Fort St. John. Call (780) 205-0524 for a free estimate.">
+<meta name="theme-color" content="#4f4a9c">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#4f4a9c; --ink:#25214f; --green:#3f9139; --leaf:#e5f2df; --sky:#8fb2e3; --mist:#eef4fb; --paper:#fbfcfe; --text:#3b3a55; --line:#dfe6f1;
+  --head:'Bricolage Grotesque',system-ui,sans-serif; --body:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--head);color:var(--ink);line-height:1.05;letter-spacing:-.02em}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:15px 26px;border-radius:999px;transition:.25s;cursor:pointer;border:2px solid transparent;font-family:var(--body)}
+.btn-green{background:var(--green);color:#fff}.btn-green:hover{background:#2f7a2a;transform:translateY(-2px)}
+.btn-line{border-color:var(--purple);color:var(--purple)}.btn-line:hover{background:var(--purple);color:#fff}
+.btn-white{background:#fff;color:var(--purple)}.btn-white:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}.btn-ghost:hover{background:#fff;color:var(--ink)}
+.tag{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+
+/* top bar + header */
+.topbar{background:var(--ink);color:#d7d9f2;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.topbar a:hover{color:#fff}
+.topbar span{display:inline-flex;gap:18px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:50;background:rgba(251,252,254,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.logo img{height:78px;width:auto}
+nav{display:flex;align-items:center;gap:34px;font-weight:600;font-size:15px;color:var(--ink)}
+nav a:not(.btn):hover{color:var(--green)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--ink);margin:6px 8px;transition:.25s}
+
+/* hero */
+.hero{position:relative;background:var(--mist);padding:70px 0 150px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(44px,6vw,84px);font-weight:800;margin:20px 0 22px}
+.hero h1 em{font-style:normal;color:var(--purple);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.14em;background:var(--green);border-radius:9px;opacity:.85}
+.hero p.lead{font-size:19px;max-width:520px;color:var(--text)}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 38px}
+.areas{font-size:14px;color:#5d5c7c;border-left:3px solid var(--green);padding-left:14px;max-width:480px}
+.areas b{color:var(--ink)}
+.facts{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px;padding-top:26px;border-top:1px dashed #b9c6dd}
+.facts div{font-size:14px;font-weight:600;color:var(--ink);display:flex;gap:9px;align-items:center}
+.facts svg{width:20px;height:20px;color:var(--green);flex:none}
+.collage{position:relative;height:640px}
+.collage .c1{position:absolute;right:0;top:0;width:66%;height:560px;border-radius:30px;object-fit:cover;box-shadow:0 30px 60px -25px rgba(37,33,79,.45)}
+.collage .c2{position:absolute;left:0;bottom:20px;width:250px;height:250px;border-radius:50%;object-fit:cover;border:10px solid var(--mist);box-shadow:0 20px 40px -20px rgba(37,33,79,.5)}
+.collage .c3{position:absolute;left:12%;top:40px;width:36%;height:150px;border-radius:18px;object-fit:cover;transform:rotate(-4deg);border:6px solid #fff;box-shadow:0 18px 36px -18px rgba(37,33,79,.5)}
+.seal{position:absolute;right:-14px;bottom:0;width:170px;height:170px;filter:drop-shadow(0 14px 22px rgba(37,33,79,.35))}
+.seal .spin{transform-origin:center;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bub{position:absolute;border-radius:50%;border:2px solid rgba(79,74,156,.25);background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.9),rgba(143,178,227,.18))}
+.hero .wave{position:absolute;left:0;bottom:-1px;width:100%;height:90px}
+
+/* services */
+.services{padding:40px 0 110px}
+.services .wrap{display:grid;grid-template-columns:.9fr 1.2fr;gap:70px;align-items:start}
+.sticky{position:sticky;top:110px}
+.sticky h2{font-size:clamp(36px,4.4vw,58px);font-weight:800;margin:12px 0 16px}
+.sticky p{max-width:380px;margin-bottom:28px}
+.preview{position:relative;aspect-ratio:4/4.3;border-radius:28px;overflow:hidden;background:var(--mist);margin-top:34px}
+.preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .5s,transform .8s}
+.preview img.on{opacity:1;transform:scale(1)}
+.svc{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:70px 1fr 54px;gap:18px;align-items:center;padding:38px 0;border-bottom:1px solid var(--line);position:relative;transition:padding .3s}
+.row .n{font-family:var(--head);font-size:20px;font-weight:700;color:var(--sky)}
+.row h3{font-size:clamp(28px,3.2vw,42px);font-weight:700;transition:color .25s}
+.row p{margin-top:10px;max-width:520px}
+.row .arr{width:54px;height:54px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;transition:.3s;color:var(--purple)}
+.row .arr svg{width:20px;height:20px}
+.row .mimg{display:none}
+.row:hover,.row.active{padding-left:14px}
+.row:hover h3,.row.active h3{color:var(--purple)}
+.row:hover .arr,.row.active .arr{background:var(--green);border-color:var(--green);color:#fff;transform:rotate(-45deg)}
+.row:hover .n,.row.active .n{color:var(--green)}
+
+/* why */
+.why{background:var(--ink);color:#cfd1ee;position:relative;overflow:hidden;padding:110px 0}
+.why::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;left:-200px;top:-260px;background:radial-gradient(circle,rgba(143,178,227,.22),transparent 65%)}
+.why .wrap{position:relative;display:grid;grid-template-columns:.8fr 1.3fr;gap:70px;align-items:center}
+.why h2{color:#fff;font-size:clamp(36px,4.4vw,58px);font-weight:800;margin:12px 0 30px}
+.why .badge{width:min(340px,80%)}
+.why .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);border-radius:24px;overflow:hidden;margin-top:6px}
+.why .grid div{background:var(--ink);padding:34px 30px}
+.why .grid h3{color:#fff;font-size:24px;font-weight:700;margin-bottom:10px}
+.why .grid b{display:block;color:var(--sky);font-family:var(--head);font-size:14px;margin-bottom:16px;letter-spacing:.1em}
+
+/* process */
+.process{padding:110px 0;background:var(--paper)}
+.process .head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:70px}
+.process h2{font-size:clamp(36px,4.4vw,58px);font-weight:800;margin-top:12px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;position:relative}
+.steps::before{content:"";position:absolute;left:8%;right:8%;top:42px;border-top:3px dotted #b5c3dc}
+.step{position:relative;text-align:center;padding:0 10px}
+.step .dot{width:84px;height:84px;border-radius:50%;margin:0 auto 26px;display:grid;place-items:center;color:#fff;font-family:var(--head);font-weight:800;font-size:34px;box-shadow:0 0 0 10px var(--paper);position:relative}
+.step:nth-child(1) .dot{background:#6dbb4f}
+.step:nth-child(2) .dot{background:#62c1ee}
+.step:nth-child(3) .dot{background:#0d2a76}
+.step h3{font-size:26px;font-weight:700;margin-bottom:12px}
+.step p{max-width:310px;margin:auto}
+
+/* gallery */
+.gallery{padding:110px 0;background:var(--mist)}
+.gallery .head{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;margin-bottom:46px}
+.gallery h2{font-size:clamp(36px,4.4vw,58px);font-weight:800;margin-top:12px}
+.gallery .head p{max-width:420px}
+.mas{columns:3;column-gap:18px}
+.mas figure{break-inside:avoid;margin-bottom:18px;border-radius:20px;overflow:hidden;cursor:zoom-in;position:relative;background:#fff}
+.mas img{width:100%;height:auto;transition:transform .7s}
+.mas figure:hover img{transform:scale(1.05)}
+.lb{position:fixed;inset:0;background:rgba(20,18,50,.92);display:none;place-items:center;z-index:100;padding:30px;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-height:90vh;border-radius:14px}
+
+/* review + estimate */
+.duo{display:grid;grid-template-columns:1fr 1fr}
+.duo>div{padding:90px max(24px,calc((100vw - 1200px)/2)) 90px 60px}
+.duo .rev{background:var(--green);color:#fff;padding-left:max(24px,calc((100vw - 1200px)/2));padding-right:60px}
+.duo .est{background:var(--purple);color:#fff}
+.duo h2{color:#fff;font-size:clamp(30px,3.6vw,46px);font-weight:800;margin-bottom:28px;max-width:440px}
+.duo .stars{display:flex;gap:4px;margin-bottom:18px;color:#ffe27a}
+.duo .stars svg{width:26px;height:26px}
+.duo .btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* contact */
+.contact{padding:110px 0 90px}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.contact h2{font-size:clamp(36px,4.4vw,58px);font-weight:800;margin:12px 0 16px}
+.info{margin-top:34px;display:grid;gap:22px}
+.info a,.info div{display:flex;gap:16px;align-items:flex-start;font-weight:600;color:var(--ink)}
+.info .ic{flex:none;width:48px;height:48px;border-radius:50%;background:var(--leaf);color:var(--green);display:grid;place-items:center}
+.info .ic svg{width:22px;height:22px}
+.info small{display:block;font-weight:500;color:#6d6c89;font-size:13px}
+.info a:hover span.t{color:var(--purple)}
+form{background:#fff;border:1px solid var(--line);border-radius:28px;padding:40px;box-shadow:0 30px 60px -40px rgba(37,33,79,.35);display:grid;gap:18px}
+form .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{font-size:13px;font-weight:700;color:var(--ink);display:grid;gap:7px}
+input,textarea{font:inherit;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--purple);background:#fff}
+textarea{min-height:140px;resize:vertical}
+form small{font-size:12px;color:#7a7996}
+.contact .wrap.solo{display:block}
+.insta{margin-top:70px;background:var(--leaf);border-radius:26px;padding:28px 36px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.insta h3{font-size:26px}.insta p{font-weight:600;color:var(--green)}
+
+/* footer */
+footer{background:var(--ink);color:#c1c3e4;padding:70px 0 0}
+footer .top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:50px;padding-bottom:50px}
+footer img.fl{height:96px;width:auto;margin-bottom:18px}
+footer h4{font-family:var(--head);color:#fff;font-size:18px;margin-bottom:16px}
+footer li{list-style:none;margin-bottom:10px}
+footer a:hover{color:#fff}
+.pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.pay img{height:24px;width:auto;border-radius:4px}
+.bottom{border-top:1px solid rgba(255,255,255,.14);padding:22px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+.bottom a{color:#fff;font-weight:700;border-bottom:1px solid var(--green)}
+
+.rv{opacity:0;transform:translateY(26px);transition:.8s}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  nav{position:fixed;inset:0 0 auto 0;top:0;background:var(--paper);flex-direction:column;padding:100px 24px 40px;gap:24px;font-size:20px;transform:translateY(-110%);transition:.4s;z-index:60;box-shadow:0 30px 60px rgba(0,0,0,.2)}
+  nav.open{transform:none}
+  .burger{display:block;position:relative;z-index:70}
+  .hero{padding:50px 0 120px}
+  .hero .wrap,.services .wrap,.why .wrap,.contact .wrap,.process .head{grid-template-columns:1fr;gap:44px}
+  .collage{height:520px}.collage .c1{height:460px}
+  .sticky{position:static}.preview{display:none}
+  .row{grid-template-columns:44px 1fr 46px;padding:28px 0}
+  .row .mimg{display:block;grid-column:2/4;border-radius:18px;aspect-ratio:16/10;object-fit:cover;width:100%;margin-top:6px}
+  .steps{grid-template-columns:1fr;gap:50px}.steps::before{display:none}
+  .mas{columns:2}
+  .duo{grid-template-columns:1fr}.duo>div,.duo .rev{padding:60px 24px}
+  footer .top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  .topbar .hide-s{display:none}
+  .logo img{height:58px}
+  .collage{height:440px}.collage .c1{width:74%;height:380px}.collage .c2{width:150px;height:150px;border-width:7px}.collage .c3{height:110px;width:40%}.seal{width:120px;height:120px;right:-6px}
+  .hero h1 em{white-space:normal}
+  .bub{display:none}
+  .why .grid{grid-template-columns:1fr}
+  .mas{columns:1}
+  form{padding:26px 20px}form .two{grid-template-columns:1fr}
+  footer .top{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span><a href="tel:+17802050524">(780) 205-0524</a><a href="mailto:cjanitorial@sasktel.net">cjanitorial@sasktel.net</a></span>
+  <span class="hide-s">9810 96st Suite 205, Grande Prairie, Alberta T8V 7T9</span>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top" aria-label="Carolyn's Janitorial LTD home"><img src="images/logo.png" alt="Carolyn's Janitorial Ltd."></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="nav">
+    <a href="#services">Services</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#process">Our Process</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-green" href="#estimate">Get Free Estimate</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <span class="bub" style="width:90px;height:90px;left:46%;top:60px"></span>
+  <span class="bub" style="width:40px;height:40px;left:51%;top:190px"></span>
+  <span class="bub" style="width:150px;height:150px;left:-50px;bottom:200px"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">Honest Reliable Service</span>
+      <h1>Spaces that feel <em>properly</em> clean.</h1>
+      <p class="lead">Commercial, residential and construction cleaning from a team Grande Prairie businesses and families already count on.</p>
+      <div class="cta">
+        <a class="btn btn-green" href="#estimate">Get Free Estimate</a>
+        <a class="btn btn-line" href="tel:+17802050524">Call (780) 205-0524</a>
+      </div>
+      <p class="areas"><b>We serve</b> Grande Prairie, Edmonton, Lloydminster &amp; Fort St. John</p>
+      <div class="facts">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10 years in business</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free quote</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Background-checked cleaners</div>
+      </div>
+    </div>
+    <div class="collage">
+      <img class="c1" src="images/worker.jpg" alt="Carolyn's Janitorial cleaner with a mop and bucket">
+      <img class="c3" src="images/mirror.jpg" alt="Gloved hand wiping a mirror">
+      <img class="c2" src="images/mop.jpg" alt="Two cleaners mopping a corridor">
+      <svg class="seal" viewBox="0 0 200 200" aria-label="10 years in business">
+        <circle cx="100" cy="100" r="98" fill="#3f9139"/>
+        <circle cx="100" cy="100" r="86" fill="none" stroke="#fff" stroke-opacity=".5" stroke-dasharray="2 5" stroke-width="2"/>
+        <defs><path id="cp" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs>
+        <g class="spin"><text font-family="Figtree,sans-serif" font-size="15" font-weight="700" letter-spacing="3.4" fill="#fff"><textPath href="#cp">IN BUSINESS • CAROLYN'S JANITORIAL • </textPath></text></g>
+        <text x="100" y="116" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="62" fill="#fff">10</text>
+        <text x="100" y="138" text-anchor="middle" font-family="Figtree,sans-serif" font-weight="700" font-size="14" letter-spacing="3" fill="#fff">YEARS</text>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 50 C 240 100 480 0 720 40 S 1200 90 1440 30 V90 H0Z" fill="#fbfcfe"/></svg>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sticky rv">
+      <span class="tag">Our Services</span>
+      <h2>Explore our wide selection of services today!</h2>
+      <a class="btn btn-line" href="#contact">View All Services</a>
+      <div class="preview" aria-hidden="true">
+        <img class="on" src="images/gallery-08.jpg" alt="" data-i="0">
+        <img src="images/worker.jpg" alt="" data-i="1">
+        <img src="images/gallery-04.jpg" alt="" data-i="2">
+        <img src="images/gallery-01.jpg" alt="" data-i="3">
+      </div>
+    </div>
+    <div class="svc rv">
+      <a class="row active" href="#contact" data-i="0"><span class="n">01</span><div><h3>Office Cleaning</h3><p>One of the key components of modern and efficient organization is a clean office environment. We can help!</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><img class="mimg" src="images/gallery-08.jpg" alt="Clean modern office" loading="lazy"></a>
+      <a class="row" href="#contact" data-i="1"><span class="n">02</span><div><h3>Janitorial Services</h3><p>As a Janitorial company, we take care of your daily cleaning duties, ensuring your workspace stays spick and span!</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><img class="mimg" src="images/worker.jpg" alt="Janitor with mop bucket" loading="lazy"></a>
+      <a class="row" href="#contact" data-i="2"><span class="n">03</span><div><h3>House Cleaning</h3><p>With our highly skilled team of cleaners, render a deep cleanse of all spaces of your home by getting grime and dirt out of it!</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><img class="mimg" src="images/gallery-04.jpg" alt="Clean living room" loading="lazy"></a>
+      <a class="row" href="#contact" data-i="3"><span class="n">04</span><div><h3>Commercial Cleaning</h3><p>We offer a variety of commercial cleaning services for various types of commercial business types and sizes.</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><img class="mimg" src="images/gallery-01.jpg" alt="Clean commercial lobby" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="rv">
+      <span class="tag" style="color:var(--sky)">10 Years In Business</span>
+      <h2>Why Choose Us?</h2>
+      <svg class="badge" viewBox="0 0 300 300" aria-label="10 years in business">
+        <g fill="#8fb2e3" opacity=".9"><circle cx="150" cy="150" r="146" fill="none" stroke="#8fb2e3" stroke-width="2" stroke-dasharray="3 9"/></g>
+        <circle cx="150" cy="150" r="118" fill="#3f9139"/>
+        <circle cx="150" cy="150" r="100" fill="#25214f" stroke="#fff" stroke-width="3"/>
+        <text x="150" y="172" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="110" fill="#fff" letter-spacing="-4">10</text>
+        <text x="150" y="208" text-anchor="middle" font-family="Figtree,sans-serif" font-weight="700" font-size="20" letter-spacing="6" fill="#8fb2e3">YEARS</text>
+        <rect x="52" y="226" width="196" height="40" rx="8" fill="#4f4a9c"/>
+        <text x="150" y="253" text-anchor="middle" font-family="Figtree,sans-serif" font-weight="800" font-size="18" letter-spacing="2" fill="#fff">IN BUSINESS</text>
+      </svg>
+    </div>
+    <div class="grid rv">
+      <div><b>01</b><h3>Cleaning Experts</h3><p>With our extensive cleaning experience, we deliver exceptional results, dominating the cleaning industry, thanks to our advanced cleaning methods, and experienced cleaners.</p></div>
+      <div><b>02</b><h3>Exceptional Services</h3><p>We strive to provide an exceptional service, unmatched in terms of efficiency, engaging in motivation-driven activities.</p></div>
+      <div><b>03</b><h3>Committed and Customer Friendly</h3><p>Putting customer satisfaction above everything else, we make sure our customers are guided and informed in all we do, ensuring their needs are always attended to.</p></div>
+      <div><b>04</b><h3>Motivated to Improve</h3><p>We work hard not only to maintain our high standards, but also to keep improving every aspect of our business to make our service as customer friendly as possible.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="tag">Our Process</span><h2>Three simple steps to a cleaner space.</h2></div>
+      <p>We specialize in cleaning every kind of building, treating your belongings with immense care. We arrive at your premises and offer a free quote so you are aware of how much you would be spending.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="dot">1</div><h3>Book a Call or Visit Online</h3><p>Set up a free visit or introductory call to receive a quote and set up cleaning services for any of your cleaning needs.</p></div>
+      <div class="step rv"><div class="dot">2</div><h3>Get a Top-Rated Cleaner</h3><p>We send efficient and courteous cleaners to your premises who have been background-checked, sending someone you can count on!</p></div>
+      <div class="step rv"><div class="dot">3</div><h3>Online Management</h3><p>Manage all of your appointments and bookings online for any sort of commercial and residential cleaning.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="tag">Gallery</span><h2>Our Gallery</h2></div>
+      <p>We provide residential cleaning, commercial cleaning, post-construction and apartment cleaning services.</p>
+    </div>
+    <div class="mas">
+      <figure><img src="images/gallery-01.jpg" alt="Clean commercial lobby" loading="lazy"></figure>
+      <figure><img src="images/gallery-04.jpg" alt="Tidy living room" loading="lazy"></figure>
+      <figure><img src="images/gallery-02.jpg" alt="Spotless kitchen" loading="lazy"></figure>
+      <figure><img src="images/gallery-07.jpg" alt="Hotel style bedroom" loading="lazy"></figure>
+      <figure><img src="images/gallery-09.jpg" alt="Clean bathroom" loading="lazy"></figure>
+      <figure><img src="images/gallery-03.jpg" alt="Sofa and coffee table" loading="lazy"></figure>
+      <figure><img src="images/gallery-08.jpg" alt="Office desk" loading="lazy"></figure>
+      <figure><img src="images/gallery-05.jpg" alt="Clean bedroom" loading="lazy"></figure>
+      <figure><img src="images/gallery-10.jpg" alt="Clean kitchen with shelves" loading="lazy"></figure>
+      <figure><img src="images/gallery-06.jpg" alt="Bright apartment lounge" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW + ESTIMATE -->
+<section class="duo" id="estimate">
+  <div class="rev rv">
+    <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg></div>
+    <h2>Are you satisfied with our services?</h2>
+    <a class="btn btn-white" href="https://www.google.com/search?q=Carolyn%27s+Janitorial+Grande+Prairie+reviews" target="_blank" rel="noopener">Leave a Review</a>
+  </div>
+  <div class="est rv">
+    <h2>Get started with your free estimate</h2>
+    <div class="btns">
+      <a class="btn btn-white" href="#contact">Get Free Estimate</a>
+      <a class="btn btn-ghost" href="tel:+17802050524">Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv">
+      <span class="tag">Contact us</span>
+      <h2>Please reach out to us at any time.</h2>
+      <p>For any inquiries or questions!</p>
+      <div class="info">
+        <a href="tel:+17802050524"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></span><span><small>Call us</small><span class="t">(780) 205-0524</span></span></a>
+        <a href="mailto:cjanitorial@sasktel.net"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email us</small><span class="t">cjanitorial@sasktel.net</span></span></a>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span><small>Carolyn's Janitorial LTD</small>9810 96st Suite 205<br>Grande Prairie, Alberta T8V 7T9</span></div>
+      </div>
+    </div>
+    <form class="rv" action="mailto:cjanitorial@sasktel.net" method="post" enctype="text/plain">
+      <div class="two">
+        <label>Name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn btn-green" type="submit" style="justify-self:start">Submit</button>
+      <small>This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</small>
+    </form>
+  </div>
+  <div class="wrap solo">
+    <div class="insta rv">
+      <div><h3>Explore our Instagram</h3><p>@carolyn_janitorial</p></div>
+      <a class="btn btn-green" href="https://www.instagram.com/carolyn_janitorial/" target="_blank" rel="noopener">See full feed</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap top">
+    <div>
+      <img class="fl" src="images/logo.png" alt="Carolyn's Janitorial Ltd.">
+      <p>Commercial, residential, post-construction and apartment cleaning. Honest. Reliable. Service.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#services">Services</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#process">Our Process</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+17802050524">(780) 205-0524</a></li>
+        <li><a href="mailto:cjanitorial@sasktel.net">cjanitorial@sasktel.net</a></li>
+        <li>9810 96st Suite 205<br>Grande Prairie, Alberta T8V 7T9</li>
+      </ul>
+      <div class="pay" aria-label="Accepted payments">
+        <img src="images/pay-visa.svg" alt="Visa"><img src="images/pay-mastercard.svg" alt="Mastercard"><img src="images/pay-americanexpress.svg" alt="American Express"><img src="images/pay-discover.svg" alt="Discover"><img src="images/pay-jcb.svg" alt="JCB"><img src="images/pay-interac.svg" alt="Interac"><img src="images/pay-applepay.svg" alt="Apple Pay"><img src="images/pay-googlepay.svg" alt="Google Pay">
+      </div>
+    </div>
+  </div>
+  <div class="wrap bottom">
+    <span>&copy; 2026 Carolyn's Janitorial LTD. All rights reserved.</span>
+    <span><a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Design by Cleaning Digital.</a></span>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+// mobile nav
+const burger=document.querySelector('.burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+// service preview swap
+const rows=document.querySelectorAll('.row'),pics=document.querySelectorAll('.preview img');
+function show(i){rows.forEach(r=>r.classList.toggle('active',r.dataset.i==i));pics.forEach(p=>p.classList.toggle('on',p.dataset.i==i))}
+rows.forEach(r=>{r.addEventListener('mouseenter',()=>show(r.dataset.i));r.addEventListener('focus',()=>show(r.dataset.i))});
+// lightbox
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('.mas img').forEach(im=>im.addEventListener('click',()=>{lbi.src=im.src;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
