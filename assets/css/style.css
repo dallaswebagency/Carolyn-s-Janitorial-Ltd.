@@ -448,3 +448,93 @@ footer li a{transition:.2s}footer li a:hover{color:#fff}
 }
 @media (max-width:640px){.hero .bubble{display:none}}
 .hcard .ph img{object-position:45% 35%}
+
+/* hero: team photo as background */
+.hero.hero-bg{min-height:max(760px,100vh);display:flex;align-items:center;padding:190px 0 110px}
+.hero-bg .hbg{position:absolute;inset:0;z-index:0}
+.hero-bg .hbg img{width:100%;height:100%;object-fit:cover;object-position:70% 35%}
+.hero.hero-bg::before{background:linear-gradient(90deg,rgba(2,29,51,.97) 0%,rgba(2,29,51,.9) 30%,rgba(1,43,75,.55) 52%,rgba(1,43,75,.05) 72%,rgba(1,43,75,0) 100%),linear-gradient(0deg,rgba(2,29,51,.55) 0%,transparent 30%)}
+.hero-bg .wrap{display:block;width:min(1240px,100% - 48px)}
+.hero-bg .htext{max-width:600px}
+.hero-bg h1{font-size:clamp(44px,5.4vw,78px)}
+.hbadges{position:absolute;right:0;bottom:-60px;display:flex;align-items:center;gap:16px}
+.hbadges .float{position:static;animation:bob 6s ease-in-out infinite}
+.hbadges .float i{background:var(--aqua)}
+.hbadges .yrs{position:static;width:120px;height:120px}
+.hbadges .yrs strong{font-size:40px}
+@media (max-width:1180px){.hero-bg .hbg img{object-position:62% 35%}.hero.hero-bg::before{background:linear-gradient(90deg,rgba(2,29,51,.97) 0%,rgba(2,29,51,.85) 45%,rgba(1,43,75,.35) 75%,rgba(1,43,75,.1) 100%)}}
+@media (max-width:640px){
+  .hero.hero-bg{display:block;min-height:0;padding:0 0 70px;background:var(--navy2)}
+  .hero-bg .hbg{position:relative;display:block;aspect-ratio:16/11;margin-top:0}
+  .hero-bg .hbg img{object-position:40% 30%}
+  .hero.hero-bg::before{inset:auto 0 auto 0;top:0;height:calc(100vw * 11 / 16);background:linear-gradient(180deg,rgba(2,29,51,.55) 0%,transparent 35%,transparent 70%,var(--navy2) 100%);z-index:1}
+  .hero-bg .wrap{margin-top:30px}
+  .hbadges{position:absolute;right:16px;top:calc(100vw * 11 / 16 - 70px);bottom:auto;z-index:4}
+  .hbadges .float{display:none}
+  .hbadges .yrs{width:96px;height:96px}.hbadges .yrs strong{font-size:30px}.hbadges .yrs span{font-size:9px}
+  .hero-bg .wrap{position:static}
+}
+@media (min-width:641px){
+  .hero.hero-bg{min-height:0;padding:200px 0 120px}
+  .hero-bg .hbg img{object-position:0% 30%}
+  .hero.hero-bg::before{background:linear-gradient(270deg,rgba(2,29,51,.97) 0%,rgba(2,29,51,.9) 34%,rgba(1,43,75,.45) 52%,rgba(1,43,75,0) 66%),linear-gradient(0deg,rgba(2,29,51,.5) 0%,transparent 25%)}
+  .hero-bg .htext{margin-left:auto;max-width:540px}
+  .hero-bg h1{font-size:clamp(40px,4.6vw,68px)}
+  .hbadges{right:auto;left:0;bottom:-70px}
+  .hero-bg .bubble{display:none}
+}
+@media (min-width:641px) and (max-width:1180px){
+  .hero.hero-bg::before{background:linear-gradient(270deg,rgba(2,29,51,.97) 0%,rgba(2,29,51,.88) 55%,rgba(1,43,75,.35) 85%,rgba(1,43,75,.15) 100%)}
+}
+@media (min-width:1181px){
+  .hero.hero-bg{min-height:calc(100vw * 941 / 1671);padding:170px 0 90px}
+  .hero-bg .hbg img{object-position:50% 50%}
+  .hero.hero-bg::before{background:linear-gradient(270deg,rgba(2,29,51,.96) 0%,rgba(2,29,51,.88) 26%,rgba(1,43,75,.4) 40%,rgba(1,43,75,0) 50%),linear-gradient(0deg,rgba(2,29,51,.45) 0%,transparent 22%)}
+  .hero-bg .htext{max-width:470px}
+  .hero-bg h1{font-size:clamp(40px,4vw,64px)}
+  .hero-bg .lead{font-size:17px}
+  .hero-bg .btns{margin:26px 0 22px}
+  .hero-bg .chk{gap:10px 20px}
+  .hbadges{bottom:-40px}
+}
+@media (min-width:641px){
+  .hero.hero-bg::before{background:linear-gradient(0deg,rgba(2,29,51,.45) 0%,transparent 25%)}
+  .hero-bg .htext{background:rgba(2,29,51,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);border-radius:32px;padding:40px 40px 36px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+  .hero-bg .htext h1{margin:14px 0 18px}
+}
+@media (min-width:1181px){.hero-bg .htext{max-width:520px}.hero-bg h1{font-size:clamp(38px,3.6vw,56px)}}
+
+/* hero v3: centred text over team photo */
+.hero.hero-bg{min-height:0;padding:0;display:block}
+.hero-bg .wrap{min-height:clamp(640px,calc(100vw * 941 / 1671),900px);display:flex;align-items:center;justify-content:center;padding:150px 0 80px}
+.hero-bg .hbg img{object-position:50% 35%}
+.hero.hero-bg::before{background:radial-gradient(ellipse 60% 70% at 50% 55%,rgba(2,29,51,.82) 0%,rgba(2,29,51,.62) 55%,rgba(2,29,51,.4) 100%)}
+.hero-bg .htext,.hero-bg .htext{margin:0 auto;max-width:860px;text-align:center;background:none;border:0;box-shadow:none;padding:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+.hero-bg h1{font-size:clamp(42px,6vw,88px);margin:16px 0 20px;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero-bg .lead{font-size:clamp(17px,1.5vw,20px);max-width:620px;margin:0 auto;color:#e3edf5}
+.hero-bg .btns{justify-content:center;margin:34px 0 0}
+.hero-bg .bubble{display:none}
+@media (max-width:640px){
+  .hero-bg .wrap{min-height:0;display:block;padding:30px 0 0}
+  .hero.hero-bg{padding:0 0 64px}
+  .hero.hero-bg::before{background:linear-gradient(180deg,rgba(2,29,51,.5) 0%,transparent 35%,transparent 70%,var(--navy2) 100%)}
+  .hero-bg h1{font-size:40px}
+  .hero-bg .btns{flex-direction:column;align-items:stretch}
+  .hero-bg .btns .btn{justify-content:center}
+}
+/* hero v4: faces clear, text in lower band */
+@media (min-width:641px){
+  .hero.hero-bg{background:var(--navy2)}
+  .hero-bg .hbg{position:absolute;inset:0;overflow:hidden}
+  .hero-bg .hbg img{position:absolute;top:60px;left:0;width:100%;height:auto;object-fit:fill}
+  .hero.hero-bg::before{background:linear-gradient(180deg,rgba(2,29,51,.35) 0px,transparent 140px,transparent 52%,rgba(2,29,51,.78) 66%,rgba(2,29,51,.96) 80%,var(--navy2) 100%)}
+  .hero-bg .wrap{min-height:calc(60px + 100vw * 941 / 1671 + 150px);align-items:flex-end;padding:0 0 70px}
+  .hero-bg h1{font-size:clamp(36px,4.3vw,64px);margin:12px 0 16px}
+  .hero-bg .lead{font-size:18px}
+  .hero-bg .btns{margin-top:28px}
+}
+@media (min-width:641px){
+  .hero-bg .hbg img{-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,#000 72%,transparent 100%)}
+  .hero-bg .eyebrow{text-shadow:0 2px 12px rgba(0,0,0,.8)}
+}
+@media (max-width:1180px){.util .wrap>span:last-child em{display:none}}
