@@ -424,3 +424,26 @@ footer li a{transition:.2s}footer li a:hover{color:#fff}
 .box .stars{display:flex;gap:3px;color:#f5b301}.box .stars .ic{font-size:18px}
 .ft .lg img{width:auto;max-width:100%}
 .soc{display:flex;gap:10px;margin-top:22px}.soc a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;transition:.25s}.soc a:hover{background:var(--lime);border-color:var(--lime);color:var(--navy2);transform:translateY(-3px)}.soc .ic{font-size:18px}
+
+/* hero with team photo */
+.hero .wrap{grid-template-columns:.95fr 1.05fr}
+.hcard{width:100%;justify-self:stretch}
+.hcard .ph{aspect-ratio:16/10.5}
+.hcard .ph img{object-position:42% 40%}
+.hero .hcard .f1{left:-40px;top:auto;bottom:-26px}
+.hero .hcard .f2{right:-18px;top:-26px;bottom:auto}
+.hero .hcard .yrs{left:auto;right:28px;bottom:-46px;width:118px;height:118px}
+.hero .hcard .yrs strong{font-size:40px}
+@media (max-width:1180px){.hero .wrap{grid-template-columns:1fr;gap:60px}.hcard{margin:0 30px 0 0}}
+@media (max-width:640px){
+  .hero .hcard{order:-1;margin:0;width:100%}
+  .hero .wrap{gap:44px}
+  .hero .hcard .ph{border-width:4px;border-radius:26px}
+  .hero .hcard .f1{left:-6px;bottom:-24px;padding:8px 12px 8px 8px}
+  .hero .hcard .f1 i{width:36px;height:36px}
+  .hero .hcard .f2{display:none}
+  .hero .hcard .yrs{right:-6px;bottom:-34px;width:92px;height:92px}
+  .hero .hcard .yrs strong{font-size:30px}.hero .hcard .yrs span{font-size:9px}
+  .hero{padding-top:130px}
+}
+@media (max-width:640px){.hero .bubble{display:none}}
