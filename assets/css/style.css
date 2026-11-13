@@ -447,3 +447,4 @@ footer li a{transition:.2s}footer li a:hover{color:#fff}
   .hero{padding-top:130px}
 }
 @media (max-width:640px){.hero .bubble{display:none}}
+.hcard .ph img{object-position:45% 35%}
