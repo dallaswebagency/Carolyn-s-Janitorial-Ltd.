@@ -423,3 +423,4 @@ footer li a{transition:.2s}footer li a:hover{color:#fff}
 .insta>span{flex:1;min-width:220px}
 .box .stars{display:flex;gap:3px;color:#f5b301}.box .stars .ic{font-size:18px}
 .ft .lg img{width:auto;max-width:100%}
+.soc{display:flex;gap:10px;margin-top:22px}.soc a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;transition:.25s}.soc a:hover{background:var(--lime);border-color:var(--lime);color:var(--navy2);transform:translateY(-3px)}.soc .ic{font-size:18px}
